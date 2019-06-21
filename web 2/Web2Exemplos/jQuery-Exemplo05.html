@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script>
+
+   $(document).ready(function (){
+      $(".imgGaleria").click(function (){
+         $(this).fadeOut();
+      });
+
+      $("#exibir").click(function (){
+         $(".imgGaleria").fadeIn(slow);
+      });
+   });
+
+</script>
+
+<style>
+   .imgGaleria {
+      width: 400px;
+      height: 300px;
+   }
+</style>
+
+</head>
+<body>
+
+<img src="logo-ufu.gif"><br>
+
+<img class="imgGaleria" src="CasaFoto1.jpg">
+<img class="imgGaleria" src="CasaFoto2.jpg">
+<img class="imgGaleria" src="CasaFoto3.jpg">
+<br>
+<img class="imgGaleria" src="CasaFoto4.jpg">
+<img class="imgGaleria" src="CasaFoto5.jpg">
+<img class="imgGaleria" src="CasaFoto6.jpg">
+
+<button id="exibir">Exibir imagens</button>
+
+</body>
+</html>

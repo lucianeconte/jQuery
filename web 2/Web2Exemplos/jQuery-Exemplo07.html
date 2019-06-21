@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script>
+
+function validaIdade(obj)
+{
+   var idade = obj.value;
+   if (idade < 0 || idade > 120)
+	    return false;
+	   
+   return true;
+}
+
+$(document).ready(function(){
+   $("input[type='number']").blur(function(){  // o evento 'blur' ocorre 
+	    if (! validaIdade(this))                 // quando o objeto perde o foco
+		     alert('Idade invalida!');
+   });
+});
+
+</script>
+
+</head>
+<body>
+
+<h1>Quando deseja se aposentar? </h1>
+<input type="text" placeholder="Seu Nome"><br>
+<input type="number" placeholder="idade minima"><br>
+<input type="number" placeholder="idade maxima"><br>
+<input type="number" placeholder="idade ideal"><br>
+
+</body>
+</html>

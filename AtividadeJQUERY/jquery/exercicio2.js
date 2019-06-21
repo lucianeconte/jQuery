@@ -109,3 +109,32 @@ $(function ExerParents() {
     });
 });
 
+// ***************** CSS ************************************
+$(function () {
+    $(document).ready(function () {
+        $a = $("ul h2").eq(1).css("color");
+        console.log($a);
+    });
+});
+
+$(function () {
+    $(document).ready(function () {
+        $("#inicio").height(70).css("background-color", "yellow");
+        console.log($("#inicio").height());
+        console.log($("#inicio").innerHeight());
+        console.log($("#inicio").innerWidth());
+        console.log($("#inicio").offset());
+        console.log($("#inicio").outerHeight());
+        console.log($("#inicio").outerWidth());
+        console.log($("#inicio").position());
+        $("#fruits").scrollLeft(50);
+        console.log($("#fruits").scrollLeft());
+        console.log($("#fruits").scrollTop());
+        $("#fruits").width(500);
+        console.log($("#fruits").width());
+    });
+});
+
+
+// ***************** Métodos de manipulação de DOM ************************
+// ver exercício 3

@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+
+<meta charset="UTF-8">
+<title>jQuery - Motivação</title>
+		
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+		
+<script>
+	$(document).ready(function () {
+			
+		$(".imgGalery").each(function(i) {
+			$(this).delay(200*i).fadeIn();
+		});
+		
+		$(".imgGalery").hover(
+		
+			function (){
+				$(this).animate({
+					width: '280px',
+					height: '250px'
+				});
+			},
+			
+			function (){
+				$(this).animate({
+					width: '230px',
+					height: '200px'
+				});
+			}			
+		);
+		
+	});
+</script>
+		
+<style>
+
+	body {
+		color: black;
+		font-size: 16pt;
+		background-color: #DDD; 
+	}
+	
+	table.center {
+		margin: 0 auto; 
+	}
+
+	th, td {
+		width: 230px;
+		height: 200px;
+		padding: 10px;
+	}
+	
+	.imgGalery {
+		width: 230px;
+		height: 200px;
+		border-radius: 20px;
+		display: none;
+	}
+
+</style>	
+</head>
+<body>
+
+<table class="center" border="0" style="horizontal-align:center;">
+	<tr>
+		<td><img class="imgGalery" src="CasaFoto1.jpg" id="img01"></td>
+		<td><img class="imgGalery" src="CasaFoto2.jpg" id="img02"></td>
+		<td><img class="imgGalery" src="CasaFoto3.jpg" id="img03"></td>
+		<td><img class="imgGalery" src="CasaFoto4.jpg" id="img04"></td>
+	</tr>
+	<tr>
+		<td><img class="imgGalery" src="CasaFoto5.jpg" id="img05"></td>
+		<td><img class="imgGalery" src="CasaFoto6.jpg" id="img06"></td>
+		<td><img class="imgGalery" src="CasaFoto1.jpg" id="img07"></td>
+		<td><img class="imgGalery" src="CasaFoto2.jpg" id="img08"></td>
+	</tr>
+	<tr>
+		<td><img class="imgGalery" src="CasaFoto3.jpg" id="img09"></td>
+		<td><img class="imgGalery" src="CasaFoto4.jpg" id="img10"></td>
+		<td><img class="imgGalery" src="CasaFoto5.jpg" id="img11"></td>
+		<td><img class="imgGalery" src="CasaFoto6.jpg" id="img12"></td>
+	</tr>
+	<tr>
+</table>
+
+</body>
+</html>
